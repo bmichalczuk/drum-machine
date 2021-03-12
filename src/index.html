@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Machine</title>
+</head>
+<body>
+    <main class="app">
+        <ul class="keyboard">
+            <li class="keyboard__key"><button id="Q">Q</button></li>
+            <li class="keyboard__key"><button id="W">W</button></li>
+            <li class="keyboard__key"><button id="E">E</button></li>
+            <li class="keyboard__key"><button id="A">A</button></li>
+            <li class="keyboard__key"><button id="S">S</button></li>
+            <li class="keyboard__key"><button id="D">D</button></li>
+            <li class="keyboard__key"><button id="Z">Z</button></li>
+            <li class="keyboard__key"><button id="X">X</button></li>
+            <li class="keyboard__key"><button id="C">C</button></li>
+        </ul>
+        <div class="settings">
+            <div class="switch">
+                <input class="switch__input" type="checkbox" id="power">
+                <label class="switch__label" for="power"><span class="visually-hidden">Power</span></label>
+            </div>
+            <div class="screen"></div>
+            <input type="range" max='1' min='0' step='0.01' type='range' id="volume" class="settings__volume">
+            <div class="switch">
+                <input class="switch__input" type="checkbox" id="bank">
+                <label class="switch__label" for="bank"><span class="visually-hidden">Bank</span></label>
+            </div>
+           
+        </div>
+    </main>
+</body>
+</html>
