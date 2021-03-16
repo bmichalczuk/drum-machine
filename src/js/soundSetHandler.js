@@ -1,7 +1,15 @@
-import {setOne, setTwo} from "./sounds";
-import {setSoundSet} from "./state";
+import withPowerGuard from "./withPowerGuard";
+import changeSoundSet from "./changeSoundSet";
+import getState from "./state";
+import setScreenStatus from "./setScreenStatus";
 
-const handleSoundSet = (currentSoundSet) => currentSoundSet === setOne ? setSoundSet(setTwo) : setSoundSet(setOne);
+const soundSetHandler = (event) => {
+    event.stopPropagation();
+    const {soundSet: currentSoundSet} = getState();
+    changeSoundSet(currentSoundSet);
+    const {soundSet: {name}} = getState();
+    setScreenStatus(name);
+};
 
-export default handleSoundSet;
+export default withPowerGuard(soundSetHandler);
 

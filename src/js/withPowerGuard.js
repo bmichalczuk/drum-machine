@@ -1,10 +1,10 @@
 import getState from "./state";
 
-const powerGuard = fn => {
+const withPowerGuard = fn => {
     return (...args) => {
         const {power} = getState();
         return power && fn(...args);
     }
 }
 
-export default powerGuard;
+export default withPowerGuard;

@@ -1,5 +1,5 @@
 import playSound from "./playSound";
-import setScreenStatus from "./screenHandler";
+import setScreenStatus from "./setScreenStatus";
 import {makeElementActive, makeElementInactive} from "./activeStatusHandlers";
 
 const playKeyboardKey = async (sound, soundName, key) => {
