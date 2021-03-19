@@ -1,5 +1,5 @@
-$track-color: darkgray !default;
-$thumb-color: orange !default;
+$track-color: $color-secondary !default;
+$thumb-color: $color-tertiary !default;
 
 $thumb-radius: 0 !default;
 $thumb-height: 24px !default;
@@ -8,15 +8,15 @@ $thumb-shadow-size: 4px !default;
 $thumb-shadow-blur: 4px !default;
 $thumb-shadow-color: rgba(0, 0, 0, .2) !default;
 $thumb-border-width: 2px !default;
-$thumb-border-color: orange !default;
+$thumb-border-color: $color-tertiary !default;
 
-$track-width: 100% !default;
+$track-width: 70% !default;
 $track-height: 8px !default;
 $track-shadow-size: 1px !default;
 $track-shadow-blur: 1px !default;
 $track-shadow-color: rgba(0, 0, 0, .2) !default;
 $track-border-width: 2px !default;
-$track-border-color: #cfd8dc !default;
+$track-border-color: $color-secondary !default;
 
 $track-radius: 5px !default;
 $contrast: 5% !default;
